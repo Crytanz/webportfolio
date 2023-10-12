@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Capstone 1</title>
+		<link rel="stylesheet" href="./index.css">
+		<link rel="stylesheet" type="text/css" href="./script.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+
+  		<!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3">
+			<div class="container-fluid d-flex justify-content-between">
+				<a class="navbar-brand" href="#">Matt</a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#landing">Profile</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#tools">Tools</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+			<!-- Navbar Section End -->
+
+
+			<!-- Landing Section Start -->
+		<section class="profileSection" id="landing">
+			<div class="d-flex justify-content-center text-center pt-5">
+				<div>
+					<img src="./images/profile.jpg" class="profileImg mb-4" alt="">
+					<div class="greeting container text-center mb-4">Hi! I`m Matt</div>
+					<div class="greeting container text-center mb-4">Full Stack Web Developer</div>
+					<div class="container w-75">
+						<p class="description">My name is Mark Jerome Mateo. I am a fresh graduate from AMA Computer College Santiago Campus batch of 2021. I experienced basic front and back-end development. I love web designing and create simple web pages with functions like sign-in and sign-up. I also have basic knowledge in troubleshooting and Microsoft softwares like MS Word and MS Excel.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+			<!-- Landing Section End -->
+
+			<!-- Project Section Start -->
+		<section  id="projects">
+			<div class="pt-3">
+				<div class="title text-center fs-5 p-1 rounded-3">My Projects</div>
+				<div id="carouselExampleAutoplaying" class=" carousel slide m-auto" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="./images/1.JPG" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="./images/2.JPG" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="./images/3.JPG" class="d-block w-100" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</section>
+		<!-- Project Section End -->
+
+			<!-- Tools Section Start -->
+		<section  id="tools">
+			<div class="pt-3">
+				<div class="title text-center fs-5 p-1 rounded-3">Tools</div>
+				<div class="d-flex justify-content-center flex-wrap">
+					<img src="./images/logo-bootstrap.png" class="logoImg" alt="">
+					<img src="./images/logo-css3.png" class="logoImg" alt="">
+					<img src="./images/logo-expressjs.png" class="logoImg" alt="">
+					<img src="./images/logo-git.png" class="logoImg" alt="">
+					<img src="./images/logo-heroku.png" class="logoImg" alt="">
+					<img src="./images/logo-javascript.png" class="logoImg" alt="">
+					<img src="./images/logo-react.png" class="logoImg" alt="">
+					<img src="./images/logo-mongodb.png" class="logoImg" alt="">
+					<img src="./images/logo-postman.png" class="logoImg" alt="">
+					<img src="./images/logo-nodejs.png" class="logoImg" alt="">
+					<img src="./images/logo-sublime-text-3.png" class="logoImg" alt="">
+					<img src="./images/logo-rest.png" class="logoImg" alt="">
+				</div>
+			</div>
+		</section>
+
+				<!-- Tools Section End -->
+				<!-- Contact Section Start -->
+		<section  id="contact">
+			<div class="pt-3">
+				<div class="title text-center fs-5 p-1 rounded-3">Contact Me</div>
+				<div class="d-flex justify-content-center flex-wrap fs-5"> 
+					<div class="pt-3 pb-3"> 
+						<a href="https://www.linkedin.com/in/mark-jerome-mateo-53027b295/" target="blank">
+							<img src="./images/linkedin.png" class="logoImg"></a>
+						<a href="https://github.com/Crytanz/" target="blank">
+							<img src="./images/github.png" class="logoImg">
+					</a><a href="https://www.facebook.com/Crytanz/" target="blank">
+							<img src="./images/facebook.png" class="logoImg"></a>
+
+					</div>
+					</div>
+
+				<form class="formContainer m-auto rounded-4 text-center">
+					<div class="mb-3">
+						<label for="exampleInputFullname" class="form-label">Fullname</label>
+						<input type="text" class="form-control" id="exampleInputFullname"  placeholder="Enter Your Name"  required>
+					</div>
+					<div class="mb-3">
+						<label for="exampleInputEmail1" class="form-label">Email address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1"  placeholder="Enter Your Email"  required>
+					</div>
+					<div class="mb-3">
+					  <label for="exampleFormControlTextarea1" class="form-label">Message me</label>
+					  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary m-2">Submit</button>
+				</form>
+			</div>
+		</section>
+		<!-- Contact Section End -->
+		
+		<!-- Footer Section  -->
+		<footer class="bg-dark py-2 mt-5">
+			<div class="container text-light text-center">© Mark Jerome Mateo || Full Stack Developer || 2023</div>
+		</footer>
+		<!-- Footer Section End -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
