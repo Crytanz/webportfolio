@@ -10,6 +10,15 @@
   </head>
   <body>
 
+  		<!-- Loading area  -->
+  	<div class="loading-container">
+  	  <div class="progress">
+  	    <div class="color"></div>
+  	  </div>
+  	  <div class="loading-text">Loading...</div>
+  	</div>
+
+
   		<!-- Navbar Section -->
     <nav class="sticky-top navbar navbar-expand-lg bg-dark navbar-dark p-3">
 			<div class="container-fluid d-flex justify-content-between">
@@ -45,10 +54,12 @@
 			<div class="d-flex justify-content-center text-center pt-5">
 				<div>
 					<img src="./images/profile.jpg" class="profileImg mb-4" alt="">
-					<div class="greeting container text-center mb-4">Hi! I`m Matt</div>
-					<div class="greeting container text-center mb-4">Full Stack Web Developer</div>
+					<div class="animation-container">
+					  <span class="animate-text" id="text1">I'm</span>
+					  <span class="animate-text" id="text2">Matt</span>
+					</div>
 					<div class="container w-75">
-						<p class="description">My name is Mark Jerome Mateo. I am a fresh graduate from AMA Computer College Santiago Campus batch of 2021. I experienced basic front and back-end development. I love web designing and create simple web pages with functions like sign-in and sign-up. I also have basic knowledge in troubleshooting and Microsoft softwares like MS Word and MS Excel.</p>
+					  <p class="description">My name is Mark Jerome Mateo. I am a fresh graduate from AMA Computer College Santiago Campus batch of 2021. I experienced basic front and back-end development. I love web designing and create simple web pages with functions like sign-in and sign-up. I also have basic knowledge in troubleshooting and Microsoft software like MS Word and MS Excel.</p>
 					</div>
 				</div>
 			</div>
@@ -68,8 +79,12 @@
 						<div class="carousel-item">
 							<img src="./images/2.JPG" class="d-block w-100" alt="...">
 						</div>
-						<div class="carousel-item">
+						<div class="carousel-item text-center" >
+							<h4>Online Store</h4>
+							<a href="http://zuitt-bootcamp-prod-328-6147-mateo.s3-website.us-east-1.amazonaws.com/" 
+							target="_blank">
 							<img src="./images/3.JPG" class="d-block w-100" alt="...">
+							</a>
 						</div>
 					</div>
 					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -150,5 +165,6 @@
 
 		<!-- JS Link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

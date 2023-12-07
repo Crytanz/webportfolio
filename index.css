@@ -13,6 +13,93 @@
 body {
 	background-color: #00111c !important;
 }
+
+/* Loading Animation Start */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.progress {
+  position: relative;
+  height: 10px;
+  width: 200px; /* Adjust the width as needed */
+  border: 2px solid #f4a261;
+  border-radius: 15px;
+  margin-bottom: 20px; /* Add margin to separate from loading text */
+}
+
+.progress .color {
+  position: absolute;
+  background-color: #ffffff;
+  width: 0px;
+  height: 10px;
+  border-radius: 15px;
+  animation: progress 4s infinite linear;    
+}
+
+.loading-text {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 75%;
+  }
+  75% {
+    width: 85%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Loading Animation End */
+
+/* Define the styles for the animation */
+.animation-container {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.animate-text {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+
+.animate-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.description {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.profileImg {
+  opacity: 0;
+  transform: translateY(20px);
+}
+/*End of Loading*/
 .navbar{ 
 	color: #fff;
 }
@@ -106,3 +193,39 @@ body {
 		width: 80%;
 	}
 }
+
+/* Define the styles for the animation */
+.animation-container {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.animate-text {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+
+.animate-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.description {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.profileImg {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+
