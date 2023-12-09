@@ -115,4 +115,3 @@ document.addEventListener("DOMContentLoaded", function () {
   // Show the footer by removing the 'd-none' class
   document.querySelector('footer').classList.remove('d-none');
 });
-
