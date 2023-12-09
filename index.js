@@ -92,20 +92,27 @@ function animateImage() {
   );
 }
 
-// Call the animation function when the page loads
-window.onload = function () {
+// Loading Area 
+document.addEventListener('DOMContentLoaded', function() {
   // Simulate loading time with a setTimeout
-  setTimeout(function () {
+  setTimeout(function() {
     // Hide the loading container
     document.querySelector('.loading-container').style.display = 'none';
 
     // Display the body content
     document.body.style.display = 'block';
 
-    // Call the animation function
-    animatePage();
-
-    // Display the footer
-    document.querySelector('footer').style.display = 'block';
+    // Show the footer by removing the 'd-none' class
+    document.querySelector('footer').classList.remove('d-none');
   }, 800); // Adjust the timeout duration (in milliseconds) as needed
-};
+});
+
+// Call the animation function when the page loads
+window.onload = animatePage;
+
+// Additional code to show the footer
+document.addEventListener("DOMContentLoaded", function () {
+  // Show the footer by removing the 'd-none' class
+  document.querySelector('footer').classList.remove('d-none');
+});
+
