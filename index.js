@@ -1,17 +1,15 @@
 // Loading Area 
 
-
 document.addEventListener('DOMContentLoaded', function() {
   // Simulate loading time with a setTimeout
   setTimeout(function() {
     // Hide the loading container
     document.querySelector('.loading-container').style.display = 'none';
 
-    // Display the content
-    document.querySelector('.content').style.display = 'block';
+    // Display the body content
+    document.body.style.display = 'block';
   }, 800); // Adjust the timeout duration (in milliseconds) as needed
 });
-
 
 
 
