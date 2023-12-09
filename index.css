@@ -13,6 +13,12 @@
 body {
 	background-color: #00111c !important;
 }
+/*Footer Section Start*/
+footer {
+  display: block !important;
+}
+/*Footer Section End*/
+
 
 /* Loading Animation Start */
 .loading-container {

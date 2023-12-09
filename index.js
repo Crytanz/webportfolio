@@ -1,19 +1,3 @@
-// Loading Area 
-
-document.addEventListener('DOMContentLoaded', function() {
-  // Simulate loading time with a setTimeout
-  setTimeout(function() {
-    // Hide the loading container
-    document.querySelector('.loading-container').style.display = 'none';
-
-    // Display the body content
-    document.body.style.display = 'block';
-  }, 800); // Adjust the timeout duration (in milliseconds) as needed
-});
-
-
-
-
 // JavaScript using Web Animations API
 function animatePage() {
   // Trigger image animation first
@@ -109,4 +93,19 @@ function animateImage() {
 }
 
 // Call the animation function when the page loads
-window.onload = animatePage;
+window.onload = function () {
+  // Simulate loading time with a setTimeout
+  setTimeout(function () {
+    // Hide the loading container
+    document.querySelector('.loading-container').style.display = 'none';
+
+    // Display the body content
+    document.body.style.display = 'block';
+
+    // Call the animation function
+    animatePage();
+
+    // Display the footer
+    document.querySelector('footer').style.display = 'block';
+  }, 800); // Adjust the timeout duration (in milliseconds) as needed
+};
