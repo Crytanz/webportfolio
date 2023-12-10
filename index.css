@@ -165,15 +165,19 @@ footer {
 .tools-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2px; /* Adjust the gap value as needed */
-  justify-content: center;
+  gap: 20px; /* Adjust the gap value as needed */
+
 }
 
 .logoImg {
-  width: 120px;
-  height: 120px;
+
+  width: 90px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
   transition: .5s all; /*pang smooth animation*/
   cursor: pointer;
+
 }
 
 .logoImg:hover {
